@@ -63,7 +63,7 @@ try:
     fin.close()
 
     # Output the solved image
-    fout = open('solved.ppm', 'w')
+    fout = open('hidden.ppm', 'w')
     fout.write(str(header)+'\n'+str(width)+' '+str(height)+'\n'+str(maximum)+'\n')
     # Write the list formatted pixel to a string formatted.
     s = ''
