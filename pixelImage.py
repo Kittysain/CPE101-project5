@@ -5,8 +5,17 @@
 
 ################################################
 import sys
+import puzzle
+import fade
+import blur
 args = sys.argv
 
-if args[0] == 'puzzle.py':
-elif args[0] == 'blur.py':
-elif args[0] == 'fade.py':
+if len(args) == 2 and args[1] =='puzzle.ppm':
+    puzzle.puzzle_func()
+
+elif len(args) == 5:
+    fade.fade_func()
+
+elif len(args) == 3:
+    blur.blur_func()
+
